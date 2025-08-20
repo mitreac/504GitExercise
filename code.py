@@ -1,4 +1,8 @@
 def function1(a):
+    '''
+    Goes through each nucleotide in the sequence and counts it's frequency
+    Uses a dictionary to keep track of frequency
+    '''
     b = dict()
     for c in a:
         if c not in b:
@@ -8,6 +12,9 @@ def function1(a):
     return b
 
 def function2(a):
+    '''
+    Main function to run the frequency function
+    '''
     print('freqs')
     total = float(sum([a[b] for b in a.keys()]))
     for b in a.keys():
