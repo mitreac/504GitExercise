@@ -12,5 +12,6 @@ def function2(a):
     total = float(sum([a[b] for b in a.keys()]))
     for b in a.keys():
         print(b + ':' + str(a[b]/total))
+    print('\n hello there')
 
 function2(function1('ATCTGACGCGCGCCGC'))
